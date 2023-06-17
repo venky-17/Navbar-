@@ -30,4 +30,19 @@ highlight.style.width = `${coords.width}px`;
   
 }
 
+const mediaQuery = window.matchMedia("(max-width:800px")
+
+function handleMediaQuery(mq){
+    if(mq.matches){
+        alert("pls try this on a laptop since it is a mouseover effect")
+    }
+    else{
+        return
+    }
+}
+
+handleMediaQuery(mediaQuery)
+
+mediaQuery.addEventListener(handleMediaQuery)
+
 triggers.forEach(a => a.addEventListener('mousemove', highlightlink))
